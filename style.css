@@ -87,6 +87,40 @@ header {
     background-color: white;
 }
 
+.hero {
+    text-align: center;
+}
+
+.hero h1 {
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    margin-bottom: 3em;
+}
+
+.hero-right img {
+    margin-top: 3em;
+}
+
+.circle-one {
+    position: absolute;
+    right: 0;
+    top: 5em;
+    bottom: 0;
+    user-select: none;
+    z-index: -1;
+}
+
+.circle-two {
+    position: absolute;
+    top: 0;
+    left: -50px;
+    user-select: none;
+    z-index: -1;
+}
+    
+
 /* Animations */
 .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
@@ -100,6 +134,55 @@ header {
     transform: translateY(-8px) rotate(-45deg);
 }
 
+.h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 3rem;
+}
+
+.body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.115rem;
+}
+
+.subheading {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.container {
+    max-width: 70em;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2em 0;
+}
+
+.btn {
+    background-color: #7f7fd6;
+    color: white;
+    padding: 1em 1.5em;
+    border-radius: 100px;
+}
+
+.ghost {
+    background: none;
+    border: 2px solid #9ad5d6;
+    padding: 1em 1.5em;
+    border-radius: 100px;
+    color: white;
+}
+
+@media (max-width: 420px) {
+    .btn-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+    .btn {
+        margin-bottom: 1em;
+    }
+}
 
 
 
