@@ -39,6 +39,7 @@ header {
 
 .logo:hover {
     color: #84d8d8;
+    transition: 0.2s;
 }
 
 .nav-ul {
@@ -99,9 +100,15 @@ header {
     margin-bottom: 3em;
 }
 
+.hero-right {
+    position: relative;
+    overflow: hidden;
+}
+
 .hero-right img {
     margin-top: 3em;
 }
+
 
 .circle-one {
     position: absolute;
@@ -169,6 +176,33 @@ header {
     user-select: none;
 }
 
+
+.buy {
+    text-align: center;
+}
+
+.buy p {
+    margin-bottom: 3em;
+}
+
+.buy-two {
+    text-align: center;
+    margin-top: 10em;
+}
+
+.buy-two p {
+    margin-bottom: 3em;
+}
+
+.buy-two img {
+    margin-top: 1.5em;
+
+}
+
+.normalizer > *+* {
+    margin-top: 1.25rem;
+}
+
     
 /* Animations */
 .hamburger.active .bar:nth-child(1) {
@@ -222,6 +256,16 @@ header {
     border-radius: 100px;
     color: white;
 }
+
+.btn:hover {
+    background-color: #7f7fd691;
+    transition: 0.3s;
+ }
+ 
+ .ghost:hover {
+     background-color: #cc8c2d;
+     transition: 0.3s;
+ }
 
 @media (max-width: 420px) {
     .btn-wrap {
