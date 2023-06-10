@@ -227,6 +227,29 @@ header {
     mix-blend-mode: luminosity;
 }
 
+.event {
+    text-align: center;
+}
+
+.event-wrap {
+    background: linear-gradient(120deg, #7f7fd6, #9ad5d6);
+    padding: 3em;
+    border-radius: 37px;
+}
+
+.event h1 {
+    margin-bottom: 1em;
+}
+
+.event .btn {
+    background-color: black;
+    font-size: 1em;
+}
+
+.event .btn:hover {
+    background-color: #cc8c2d;
+}
+
 .normalizer > *+* {
     margin-top: 1.25rem;
 }
