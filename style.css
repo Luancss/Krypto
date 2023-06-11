@@ -65,6 +65,8 @@ header {
     overflow: hidden;
 }
 
+
+
 .nav-a {
     color: white;
 }
@@ -78,6 +80,12 @@ header {
     right: 1em;
     z-index: 4;
 }
+
+.nav-ul a:hover {
+    color: #84d8d8;
+    transition: 0.3s ease;
+}
+
 
 .bar {
     display: block;
@@ -101,7 +109,6 @@ header {
 }
 
 .hero-right {
-    position: relative;
     overflow: hidden;
 }
 
@@ -250,10 +257,80 @@ header {
     background-color: #cc8c2d;
 }
 
+.footer {
+    font-family: "Outfit", sans-serif;
+    margin-top: 5em;
+}
+
+.footer-col ul li {
+    margin-bottom: 1em;
+}
+
+.footer-a {
+    color: white;
+    font-weight: 200;
+}
+
+.footer-col h4 {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.icons ul {
+    display: flex;
+}
+
+.icons li {
+    margin-right: 1em;
+}
+
+
+.footer-input {
+    background-color: #24225a;
+    padding: 1em 6rem 1em 1.5em;
+    border-radius: 100px;
+    border: 0;
+    outline: 0;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+
+.footer-btn {
+    position: absolute;
+    top: 0;
+    left: 16em;
+}
+
+.news-wrap {
+    position: relative;
+}
+
+.footer .btn:hover {
+    background-color: #cc8c2d;
+}
+
+.newsletter h4 {
+    margin: 1em 0;
+    font-size: 1.25rem;
+}
+
+::placeholder {
+    color: white;
+}
+
+.page-end {
+    background: linear-gradient(to right, #9ad5d6, #91d2d2);
+    width: 100%;
+    height: 1vh;
+}
+
 .normalizer > *+* {
     margin-top: 1.25rem;
 }
-
     
 /* Animations */
 .hamburger.active .bar:nth-child(1) {
