@@ -399,6 +399,10 @@ header {
      transition: 0.3s;
  }
 
+ .hide {
+    display: none;
+ }
+
 @media (max-width: 420px) {
     .btn-wrap {
         display: flex;
@@ -467,9 +471,42 @@ header {
         width: 40%;
     }
 
+    .marque-fixed {
+        background-color: #2f225a;
+        max-width: 70em;
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+    .marque-list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .marque-fixed img:hover {
+        opacity: 75%;
+    }
+
     .h1 {
         font-size: 4.25rem;
         line-height: 1;
+    }
+}
+
+@media (max-width: 1050px) and (min-width: 800px) {
+    .btn-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+    .btn {
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .ghost {
+        text-align: center;
     }
 }
 
