@@ -420,6 +420,12 @@ header {
         display: none;
     }
 
+    .btn-wrap {
+        display: flex;
+        gap: 4px;
+        flex-wrap: nowrap;
+    }
+
     nav {
         display: flex;
         justify-content: space-between;
@@ -451,6 +457,19 @@ header {
     }
     .nav-a:hover::before {
         width: 100%;
+    }
+
+    .hero {
+        text-align: left;
+    }
+
+    .hero-left {
+        width: 40%;
+    }
+
+    .h1 {
+        font-size: 4.25rem;
+        line-height: 1;
     }
 }
 
