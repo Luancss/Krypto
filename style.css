@@ -7,6 +7,7 @@
 body {
     background-color: #010730;
     color: white;
+    overflow-x: hidden;
 }
 
 li {
@@ -79,11 +80,6 @@ header {
     transform: translateY(-50%);
     right: 1em;
     z-index: 4;
-}
-
-.nav-ul a:hover {
-    color: #84d8d8;
-    transition: 0.3s ease;
 }
 
 
@@ -355,6 +351,7 @@ header {
     font-size: 1.115rem;
 }
 
+
 .subheading {
     font-family: 'Outfit', sans-serif;
     font-weight: 600;
@@ -365,6 +362,13 @@ header {
 
 .container {
     max-width: 70em;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2em 0;
+}
+
+.nav-container {
+    max-width: 80em;
     width: 90%;
     margin: 0 auto;
     padding: 2em 0;
@@ -402,6 +406,51 @@ header {
     }
     .btn {
         margin-bottom: 1em;
+    }
+}
+
+@media (min-width: 800px) {
+    .split {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-ul {
+        position: static;
+        flex-direction: row;
+        background-color: transparent;
+        height: 100%;
+        justify-content: flex-end;
+    }
+    .nav-li {
+        font-size: 1.5rem;
+        margin-left: 2em;
+    }
+    .nav-a {
+        position: relative;
+    }
+
+    .nav-a::before {
+        content: '';
+        width: 0%;
+        position: absolute;
+        height: 3px;
+        background-color: #cc8c2d;
+        bottom: -2px;
+        transition: 0.3s ease;
+    }
+    .nav-a:hover::before {
+        width: 100%;
     }
 }
 
