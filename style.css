@@ -36,6 +36,7 @@ header {
     font-size: 2.25rem;
     color: white;
     font-family: 'Outfit', sans-serif;
+    font-weight: 600;
 }
 
 .logo:hover {
@@ -57,9 +58,6 @@ header {
     transition: 0.3s ease;
 }
 
-.nav-li {
-
-}
 
 .nav-ul.active {
     left: 0;
@@ -554,6 +552,36 @@ header {
     .h1 {
         font-size: 4.25rem;
         line-height: 1;
+    }
+    .hidden {
+        opacity: 0;
+        transition: 1s ease;
+    }
+
+    .hiddenb {
+        opacity: 0;
+        filter: blur(5px);
+        transition: 1s ease;
+    }
+
+    .slide-right {
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateX(100%);
+        transition: 1s ease;
+    }
+
+    .slide-left {
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateX(-100%);
+        transition: 1s ease;
+    }
+
+    .show {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
     }
 }
 
