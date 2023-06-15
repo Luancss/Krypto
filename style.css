@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #010730;
     color: white;
@@ -40,7 +44,7 @@ header {
 }
 
 .logo:hover {
-    color: #84d8d8;
+    color: #B4DBDB;
     transition: 0.2s;
 }
 
@@ -58,13 +62,11 @@ header {
     transition: 0.3s ease;
 }
 
-
 .nav-ul.active {
     left: 0;
     overflow: hidden;
+    z-index: 3;
 }
-
-
 
 .nav-a {
     color: white;
@@ -78,6 +80,11 @@ header {
     transform: translateY(-50%);
     right: 1em;
     z-index: 4;
+}
+
+.hamburger.active {
+    position: fixed;
+    top: 4.5em;
 }
 
 
@@ -99,7 +106,7 @@ header {
 }
 
 .hero p {
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 }
 
 .hero-right {

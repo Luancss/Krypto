@@ -6,6 +6,12 @@ hamburger.addEventListener('click', () => {
   navUl.classList.toggle('active')
 })
 
+  document.querySelectorAll('.nav-a').forEach(n => n.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navUl.classList.toggle('active');
+}))
+
+
 const root = document.documentElement;
 const marqueElementsDisplayed = getComputedStyle(root).getPropertyValue('--marque-elements-displayed');
 
