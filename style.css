@@ -533,6 +533,16 @@ header {
         gap: 3em;
     }
 
+    .row {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 3em;
+    }
+
+    .footer-a:hover {
+        text-decoration: underline;
+    }
+
     .event-wrap {
         padding: 10em;
     }
