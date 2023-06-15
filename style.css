@@ -533,6 +533,14 @@ header {
         gap: 3em;
     }
 
+    .event-wrap {
+        padding: 10em;
+    }
+
+    .event h1 {
+        font-size: 3.5em;
+    }
+
     .h1 {
         font-size: 4.25rem;
         line-height: 1;
