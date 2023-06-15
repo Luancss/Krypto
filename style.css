@@ -488,6 +488,40 @@ header {
     .marque-fixed img:hover {
         opacity: 75%;
     }
+    
+    .buy h2 {
+        margin-top: 3em;
+    }
+
+    .buy h1 {
+        margin-bottom: 0.5em;
+    }
+
+    .buy-left {
+        width: 45%;
+    }
+
+    .buy-right {
+        width: 50%;
+        text-align: left;
+    }
+
+    .buy-two {
+        margin-top: 5em;
+    }
+
+    .buy-two h1 {
+        margin-bottom: 0.5em;
+    }
+
+    .two-left {
+        width: 45%;
+        text-align: left;
+    }
+
+    .two-right {
+        width: 40%;
+    }
 
     .h1 {
         font-size: 4.25rem;
@@ -509,6 +543,8 @@ header {
         text-align: center;
     }
 }
+
+
 
 
 

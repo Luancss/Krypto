@@ -17,7 +17,6 @@ for (let i = 0; i < marqueElementsDisplayed; i++) {
     marqueContent.appendChild(marqueContent.children[i].cloneNode(true))
 }
 
-
 const marqueAni = document.getElementById('marque-ani')
 const marqueFixed = document.getElementById('marque-fixed')
 
